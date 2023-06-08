@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="scss/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500&family=Oswald:wght@300;400;500;600;700&family=Roboto+Slab:wght@400;500&family=Unbounded:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <img class="promo_img" src="img/banner.jpg" alt="">
+        <header>
+            <div class="top">
+                <div class="logo">
+                    <img src="img/logo.png" alt="">
+                    <p>EilfTours</p>
+                </div>
+                <nav>
+                    <a href="#">home</a>
+                    <a href="#">about us</a>
+                    <a href="#">contact us</a>
+                </nav>
+                <div class="account">
+                    <p>Name Surname</p>
+                    <img src="img/user.png" alt="">
+                    
+                </div>
+            </div>
+            <div class="promo">
+                <h1>Trip is <span style="color: white;" >easy,</span> with us!</h1> 
+            </div>
+        </header>
+        <main>
+            <div class="choosen">
+                <h2>Theme Setings</h2>  
+                <form action="">
+                    <fieldset>
+                        <legend>Colors</legend>
+                        <label>Titles color</label><input id="titlec" type="color"><br>
+                        <label>Text color</label><input id="textc" type="color"><br>  
+                    </fieldset>
+                    <fieldset>
+                        <legend>Text</legend>
+                        <label for="">Text Size</label><input id="textf" ><br>
+                        <label for="">Title Size</label><input id="titlef"><br>
+                        <label for="">Font Family</label><input id="font" list="font-list"><br>
+                        
+                        <datalist id="font-list">
+                            <option value="kanit">Kanit</option>
+                            <option value="oswald">Oswald</option>
+                            <option value="roboto">Roboto Slab</option>
+                            <option value="unb">Unbounded</option>
+                    </datalist>
+                        
+                    </fieldset>
+                    <input type="button" value="Set Styles" onclick="set()">
+                </form>  
+            </div>
+            <div class="catalog">
+                <h1>Choose your own trip</h1>
+                <div class="controllers">
+                    <div class="continents">
+                        <p>Choose your continent:</p>
+                        <ul>
+                            <li>Europe</li>
+                            <li>Asia</li>
+                            <li>North America</li>
+                            <li>Africa</li>
+                            <li class="active" >Entire world</li>
+                        </ul>
+                    </div>
+                    <div class="view">
+                        <button class="tile_view_button" ><img src="img/tile-view-svgrepo-com.svg" alt=""></button>
+                        <button class="lines_view_button opacity" ><img src="img/lines-svgrepo-com.svg"></button>
+                    </div>
+                </div>
+                <ul class="cards cards_tile">
+                    <li class="card tile">
+                        <img src="img/egypt.jpg" alt="">
+                        <div class="card_content">
+                            <h3>Egypt</h3>
+                            <p>Egypt officially the Arab Republic of Egypt, is a transcontinental country spanning the northeast corner of Africa and southwest corner of Asia</p>
+                            
+                                <button style="background:#B40035 ; color: white;" >more</button>
+                                <button>Choose</button>
+                            
+                            
+                        </div>
+                        
+                    </li>
+                    <li class="card tile">
+                        <img src="img/egypt.jpg" alt="">
+                        <div class="card_content">
+                            <h3>Egypt</h3>
+                            <p>Egypt officially the Arab Republic of Egypt, is a transcontinental country spanning the northeast corner of Africa and southwest corner of Asia</p>
+                            
+                                <button style="background:#B40035 ; color: white;" >more</button>
+                                <button>Choose</button>
+                            
+                            
+                        </div>
+                        
+                    </li>
+                    <li class="card tile">
+                        <img src="img/egypt.jpg" alt="">
+                        <div class="card_content">
+                            <h3>Egypt</h3>
+                            <p>Egypt officially the Arab Republic of Egypt, is a transcontinental country spanning the northeast corner of Africa and southwest corner of Asia</p>
+                            
+                                <button style="background:#B40035 ; color: white;" >more</button>
+                                <button>Choose</button>
+                            
+                            
+                        </div>
+                        
+                    </li>
+                    <li class="card tile">
+                        <img src="img/egypt.jpg" alt="">
+                        <div class="card_content">
+                            <h3>Egypt</h3>
+                            <p>Egypt officially the Arab Republic of Egypt, is a transcontinental country spanning the northeast corner of Africa and southwest corner of Asia</p>
+                            
+                                <button style="background:#B40035 ; color: white;" >more</button>
+                                <button>Choose</button>
+                            
+                            
+                        </div>
+                        
+                    </li>
+                    <li class="card tile lines">
+                        <img src="img/egypt.jpg" alt="">
+                        <div class="card_content">
+                            <h3>Egypt</h3>
+                            <p>Egypt officially the Arab Republic of Egypt, is a transcontinental country spanning the northeast corner of Africa and southwest corner of Asia</p>
+                            
+                                <button style="background:#B40035 ; color: white;" >more</button>
+                                <button>Choose</button>
+                            
+                            
+                        </div>
+                        
+                    </li>
+                    <li class="card lines">
+                        <img src="img/egypt.jpg" alt="">
+                        <div class="card_content">
+                            <h3>Egypt</h3>
+                            <p>Egypt officially the Arab Republic of Egypt, is a transcontinental country spanning the northeast corner of Africa and southwest corner of Asia</p>
+                            
+                                <button style="background:#B40035 ; color: white;" >more</button>
+                                <button>Choose</button>
+                            
+                            
+                        </div>
+                        
+                    </li>
+                </ul>
+            </div>
+           
+        </main>
+        <footer>
+            <p>©All rights are reserved</p>
+            <p>EiflTours</p>
+        </footer>
+    </div>
+    <script src="js/main.js" ></script>
+</body>
+</html>
